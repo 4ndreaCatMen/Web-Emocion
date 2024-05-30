@@ -133,46 +133,207 @@
 
     </div>
 
-    <div id="bienvenida" class="bienvenida">
-        <!-- Mensaje de bienvenida -->
-        <div class="row">
+   <!-- Sección de bienvenida -->
+<div id="bienvenida" class="bienvenida text-center">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <h3>Encuentra tu equilibrio emocional</h3>
                 <p>Bienvenido a travesía interior, siente este como tu refugio para aprender sobre el amplio y complejo mundo de las emociones. Tómate un momento para respirar, reflexionar y descubrir.</p>
             </div>
             <div class="col-md-6">
                 <!-- Imagen de bienvenida -->
-                <img src="conexion_emocional.jpg" alt="Imagen de bienvenida" class="img-fluid">
+                <img src="conexion_emocional.jpg" alt="Imagen de bienvenida" class="img-fluid mx-auto d-block">
             </div>
         </div>
     </div>
+</div>
+
+     
+<div id="blog" class="blog">
+    <!-- Sección de blog -->
+    <h2 class="text-center mb-4">Blog</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-4">
+                <!-- Card 1 -->
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Aprendiendo a controlar la frustración</h5>
+                        <p class="card-text">El otro día viví una situación incómoda en mi lugar de trabajo, tuve una reunión con mi jefa...</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Es necesario comunicarse para poder entenderse?</h5>
+                        <p class="card-text">A veces siento que las acciones o actuaciones no son suficiente para poder manifestar como se siente una persona al relacionarse con otras y sobretodo con las más cercanas...</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda columna -->
+            <div class="col-md-4">
+               <!-- Card 4 -->
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">No me siento comprendida por mi entorno</h5>
+                        <p class="card-text">Últimamente, he estado sintiendo que las personas a mi alrededor no entienden realmente lo que estoy atravesando...</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dejando salir mis emociones más ocultas </h5>
+                        <p class="card-text">Anoche, tuve un momento liberador con mis amigos, al principio me costó trabajo abrirme pero compartir mis sentimientos resultó en un alivio emocional que no esperaba...</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Publicar en el Blog</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="postTitle">Título</label>
+                                <input type="text" class="form-control" id="postTitle" placeholder="Ingresa el título de tu mensaje">
+                            </div>
+                            <div class="form-group">
+                                <label for="postContent">Mensaje</label>
+                                <textarea class="form-control" id="postContent" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                            </div>
+                            </br></br></br></br>
+                            <button type="submit" class="btn btn-primary">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Juegos Interactivos -->
+<div id="juegos" class="juegos container mt-5 text-center">
+    <h2 class="mb-4">Juegos Interactivos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Juego de Reflexión</h5>
+                    <p class="card-text">Haz clic en el botón para comenzar una reflexión guiada.</p>
+                    <button class="btn btn-primary" id="startReflectionBtn">Comenzar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     
+    <script>
+    function startReflection() {
+        alert('Vamos a reflexionar sobre tus emociones.');
+        // Aquí podrías añadir más funcionalidades interactivas
+    }
+    </script>
+    
+
+   <!-- Eventos y Talleres -->
+   <div id="eventos" class="eventos container mt-5">
+    <h2 class="text-center mb-4">Eventos y Talleres</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                        <th>Inscripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/06/2024</td>
+                        <td>Taller de Meditación</td>
+                        <td>Aprende técnicas básicas de meditación para el bienestar emocional.</td>
+                        <td><a href="#" class="btn btn-success">Inscribirse</a></td>
+                    </tr>
+                    <tr>
+                        <td>20/06/2024</td>
+                        <td>Sesión de Coaching</td>
+                        <td>Una sesión interactiva sobre cómo gestionar el estrés diario.</td>
+                        <td><a href="#" class="btn btn-success">Inscribirse</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Foro o Comunidad -->
+    <div id="foro" class="foro container mt-5">
+        <h2 class="text-center mb-4">Comunidad</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="postTitle">Título</label>
+                        <input type="text" class="form-control" id="postTitle" placeholder="Ingresa el título de tu mensaje">
+                    </div>
+                    <div class="form-group">
+                        <label for="postContent">Mensaje</label>
+                        <textarea class="form-control" id="postContent" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Publicar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div id="acerca-de" class="acerca-de">
         <h3>Acerca de mí</h3>
         <p>Soy una persona abierta al cambio, creo en el desarrollo y aprendizaje para mejorar los campos sociales y personales de cada individuo.
            Por ello, a través del contenido proporcionado en la web e instagram ayudaré a aquellas personas que estén dispuestas a embarcarse en este proceso emocional.</p>
     </div>
-
-    <div id="blog" class="blog">
-        <!-- Sección de blog -->
+ <!-- Footer -->
+ <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Travesía Interior</h5>
+                <p>Encuentra tu equilibrio emocional a través de nuestros recursos y comunidad.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contacto</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <p><i class="fas fa-phone-alt"></i> +123 456 789</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-envelope"></i> info@travesiainterior.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Síguenos</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://www.instagram.com/travesia_interior2024" class="btn btn-primary"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div id="juegos" class="juegos">
-        <!-- Juegos Interactivos -->
+    <div class="text-center p-3 bg-dark text-white">
+        © 2024 Travesía Interior
     </div>
-
-    <div id="eventos" class="eventos">
-        <!-- Eventos y Talleres -->
-    </div>
-
-    <div id="foro" class="foro">
-        <!-- Foro o Comunidad -->
-    </div>
-
-    <div id="contacto" class="contacto">
-        <!-- Sección de contacto -->
-    </div>
-
+</footer>
 </body>
 </html>
