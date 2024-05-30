@@ -3,7 +3,7 @@ body {
     background: linear-gradient(45deg, #FF6B6B, #FFBDAE, #FFD56B, #FF6B6B);
     display: flex;
     flex-direction: column;
-    min-height: 205em; /* Hace que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    min-height: 200em; /* Hace que el cuerpo ocupe al menos el 100% de la altura de la ventana */
     margin: 0;
 }
 /* Estilo para el contenido principal */
@@ -125,11 +125,5 @@ button:hover {
     border-top: 1px solid #17518b;
 }
 
-footer {
-    flex-shrink: 0; /* Evita que el footer se contraiga si hay poco contenido */
-    margin-top: auto; /* Hace que el footer se pegue al fondo del contenedor */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 1;
-}
+
+

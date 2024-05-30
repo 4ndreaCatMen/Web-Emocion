@@ -17,61 +17,69 @@
     <script src="Funcionalidad.js"></script> 
     <link rel="icon" href="icon.jpeg" type="image/x-icon"> <!-- Favicon en formato ICO -->
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <!-- Logo como navbar-brand -->
-     <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="Logotipo" style="height: 40px;"> <!-- Ajusta el tamaño del logo -->
-    </a>
-    <!-- Botón para colapsar el menú en dispositivos móviles -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Menú de navegación -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto"> <!-- ml-auto para alinear a la derecha -->
-            <li class="nav-item">
-                <a class="nav-link" href="#carrusel">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#bienvenida">Bienvenida</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#acerca-de">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#juegos">Juegos Interactivos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#eventos">Eventos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#foro">Comunidad</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-        </ul>
-    </div>
-    
-    <!-- Icono con menú desplegable a la derecha -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-        <ul class="navbar-nav">
-            <!-- Menú tipo "hamburguesa" desplegable -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user"></i> <!-- Icono de usuario -->
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
-                    <a class="dropdown-item" href="#mi-cuenta">Mi Cuenta</a>
-                    <a class="dropdown-item" href="#cerrar-sesion">Cerrar Sesión</a>
-                </div>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Logo como navbar-brand -->
+    <a class="navbar-brand" href="#">
+       <img src="logo.png" alt="Logotipo" style="height: 40px;"> <!-- Ajusta el tamaño del logo -->
+   </a>
+   <!-- Botón para colapsar el menú en dispositivos móviles -->
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <!-- Menú de navegación -->
+   <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto"> <!-- ml-auto para alinear a la derecha -->
+           <li class="nav-item">
+               <a class="nav-link" href="#carrusel">Inicio</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#bienvenida">Bienvenida</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#acerca-de">Sobre mí</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#blog">Blog</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#juegos">Juegos Interactivos</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#eventos">Eventos</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#foro">Comunidad</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#contacto">Contacto</a>
+           </li>
+       </ul>
+   </div>
+   
+   <!-- Icono con menú desplegable a la derecha -->
+   <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+       <ul class="navbar-nav">
+           <!-- Menú tipo "hamburguesa" desplegable -->
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="fas fa-user"></i> <!-- Icono de usuario -->
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                   <div id="popupContainer" class="popup-container">
+                       <!-- Contenido del pop-up -->
+                       <div class="popup-content">
+                           <h5>¿Quieres unirte a la comunidad?</h5>
+                           <p>Hazte miembro para acceder a contenido exclusivo y participar en nuestra comunidad.</p>
+                           <a class="dropdown-item" href="#Registrarse">Registrarse</a>
+                           <a class="dropdown-item" href="#Crear-cuenta">Crear Cuenta</a>
+                       </div>
+                   </div>
+               </div>
+           </li>
+       </ul>
+   </div>
 </nav>
+
 
 <body>
    
@@ -343,7 +351,7 @@
         </div>
     </div>
 </div>
-<div id="Acerca" class="Acerca text-center mt-5 mb-5">
+<div id="acerca-de" class="Acerca text-center mt-5 mb-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12">
@@ -356,8 +364,8 @@
     </div>
 </div>
  <!-- Footer -->
- <footer class="bg-light text-center text-lg-start mt-5">
-    <div class="container p-4">
+ <footer id="contacto" class="bg-light text-center text-lg-start mt-5">
+    <div  class="container p-4">
         <div class="row">
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Travesía Interior</h5>
