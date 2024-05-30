@@ -33,6 +33,19 @@
             alert('¡Blog publicado!');
         });
     });
-    
-    
 
+    document.addEventListener('DOMContentLoaded', function() {
+        var reservarPlazaButtons = document.querySelectorAll('.btn-reservar-plaza');
+
+        reservarPlazaButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Evita que el enlace se siga normalmente
+
+                // Muestra el mensaje de confirmación
+                alert('Plaza reservada con éxito.');
+
+            });
+        });
+    });
+    
+    
