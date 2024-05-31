@@ -47,5 +47,13 @@
             });
         });
     });
-    
-    
+
+    // Función para mostrar la imagen
+function mostrarImagen() {
+    document.getElementById('imagenPopup').style.display = 'block';
+}
+
+// Función para cerrar la imagen
+function cerrarImagen() {
+    document.getElementById('imagenPopup').style.display = 'none';
+}
