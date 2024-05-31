@@ -7,14 +7,14 @@
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (scrollTop > lastScrollTop) {
-                // El usuario está desplazándose hacia abajo, mostramos el footer
+                
                 footer.style.transform = 'translateY(0)';
             } else {
-                // El usuario está desplazándose hacia arriba, ocultamos el footer
+                
                 footer.style.transform = 'translateY(100%)';
             }
 
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para tratar con desplazamiento hacia arriba extremo
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     }
 
@@ -27,7 +27,7 @@
         var publicarBtn = document.getElementById('publicarBtn');
     
         publicarBtn.addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar que el formulario se envíe
+            event.preventDefault(); 
     
             // Mostrar el alert
             alert('¡Blog publicado!');
@@ -39,7 +39,7 @@
 
         reservarPlazaButtons.forEach(function(button) {
             button.addEventListener('click', function(event) {
-                event.preventDefault(); // Evita que el enlace se siga normalmente
+                event.preventDefault(); 
 
                 // Muestra el mensaje de confirmación
                 alert('Plaza reservada con éxito.');
