@@ -1,41 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Travesía Interior</title>
-    <!-- Agregar Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Agregar Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Tu propio archivo CSS -->
-    <link rel="stylesheet" href="Juegos.css"> 
-    <!-- jQuery (debe ir antes del JavaScript de Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- JavaScript de Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Tu propio archivo JavaScript -->
-    <script src="Juegos.js"></script> 
-    <link rel="icon" href="icon.jpeg" type="image/x-icon"> <!-- Favicon en formato ICO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenedor con Bootstrap</title>
+  <link rel="stylesheet" href="Juegos.css">
+  <!-- Enlace a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>El bienestar emocional</h1>
-    </header>
-    <main>
-        <section>
-            <h2>El bienestar emocional</h2>
-            <p>El bienestar emocional es una de las bases para lograr una vida sana, feliz y plena. Cuando hablamos de bienestar emocional nos referimos al estado de ánimo en el cual nos sentimos bien, tranquilos, percibimos que dominamos nuestras emociones y somos capaces de hacer frente a las presiones del día a día.</p>
-            <!-- Más contenido sobre el bienestar emocional -->
-        </section>
-        <section>
-            <h2>¿Qué debemos saber?</h2>
-            <p>Para lograr el bienestar emocional necesitamos encontrar un balance en todos los aspectos de nuestra vida: física, mental, emocional y espiritual. Es la habilidad de poder disfrutar la vida y a la vez de afrontar los problemas diarios que nos van surgiendo, ya sea tomando decisiones, lidiando y adaptándose a situaciones difíciles o dialogando acerca de nuestras necesidades y deseos.</p>
-            <!-- Más contenido sobre qué debemos saber -->
-        </section>
-        <!-- Más secciones con contenido informativo -->
-    </main>
-    <footer>
-        <p>&copy; 2024 Tu Sitio Web</p>
-    </footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>¿Cuál eliges?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info1')">
+                    <img src="Paisaje1.jpg" class="card-img-top img-fluid" alt="Imagen 1">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info2')">
+                    <img src="Paisaje2.jpg" class="card-img-top img-fluid" alt="Imagen 2" >
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info3')">
+                    <img src="Paisaje3.jpg" class="card-img-top img-fluid" alt="Imagen 3" >
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info4')">
+                    <img src="Paisaje4.jpg" class="card-img-top img-fluid" alt="Imagen 4" >
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info5')">
+                    <img src="Paisaje5.jpg" class="card-img-top img-fluid" alt="Imagen 5">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" onclick="mostrarInformacion('info6')">
+                    <img src="Paisaje6.jpg" class="card-img-top img-fluid" alt="Imagen 6">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+       <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="cerrarPopup()">&times;</span>
+          <div id="popup-text"></div>
+        </div>
+      </div>
+    
+    
+     <!-- Segundo juego -->
+    <div class="container2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>¿Cuál escoges?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info7')">
+                    <img src="Rojo.jpg" class="card-img-top img-fluid" alt="Imagen 7" style="max-width: 100%; height: 22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info8')">
+                    <img src="Naranja.jpg" class="card-img-top img-fluid" alt="Imagen 8"style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info9')">
+                    <img src="Amarillo.jpg" class="card-img-top img-fluid" alt="Imagen 9" style="max-width: 100%; height: 22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info10')">
+                    <img src="Blanco.jpg" class="card-img-top img-fluid" alt="Imagen 10" style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info11')">
+                    <img src="Verde.jpg" class="card-img-top img-fluid" alt="Imagen 11" style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info12')">
+                    <img src="Azul.jpg" class="card-img-top img-fluid" alt="Imagen 12" style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info13')">
+                    <img src="Violeta.jpg" class="card-img-top img-fluid" alt="Imagen 13" style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" onclick="mostrarInformacion('info14')">
+                    <img src="Negro.jpg" class="card-img-top img-fluid" alt="Imagen 14" style="max-width: 100%; height:22em;">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js, y luego Bootstrap JS) -->
+        <script src="Juegos.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+        
 </body>
 </html>
+
+
+
+
