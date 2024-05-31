@@ -57,3 +57,45 @@ function mostrarImagen() {
 function cerrarImagen() {
     document.getElementById('imagenPopup').style.display = 'none';
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    var abrirFormulario = document.getElementById("abrirFormulario");
+
+    
+    var formularioPreguntas = document.getElementById("formularioPreguntas");
+
+    
+    abrirFormulario.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        formularioPreguntas.style.display = "block"; // Mostrar el formulario
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var formulario = document.getElementById("formulario");
+
+    formulario.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        alert("¡Formulario enviado con éxito!");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var abrirFormulario = document.getElementById("abrirFormulario");
+    var formularioPreguntas = document.getElementById("formularioPreguntas");
+    var cancelarFormulario = document.getElementById("cancelarFormulario");
+
+    // Agregar evento de clic al enlace para abrir el formulario
+    abrirFormulario.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        formularioPreguntas.style.display = "block"; 
+    });
+
+    // Agregar evento de clic al botón para cancelar el formulario
+    cancelarFormulario.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        formularioPreguntas.style.display = "none"; 
+    });
+});

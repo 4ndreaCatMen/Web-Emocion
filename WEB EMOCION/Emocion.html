@@ -315,16 +315,37 @@
             </div>
         </div>
         
-        <!-- Sección de Preguntas y Sugerencias -->
+                <!-- Sección de Preguntas y Sugerencias -->
         <div class="col-lg-4">
             <div class="card rounded-circle text-center p-3">
                 <h3 class="h2">Preguntas y Sugerencias</h3>
                 <p>¿Tienes alguna pregunta o sugerencia? ¡Estamos aquí para ayudarte! Déjanos tus comentarios y te responderemos lo antes posible.</p>
-                <!-- Inserta tu formulario de preguntas y sugerencias aquí -->
-                <!-- Puedes agregar cualquier contenido adicional -->
-                <a class="btn btn-secondary" href="#" role="button">Dejar comentario »</a>
+                <!-- Enlace para abrir el formulario -->
+                <a id="abrirFormulario" class="btn btn-secondary" href="#" role="button">Dejar comentario »</a>
+                
+                <!-- Formulario de preguntas y sugerencias (inicialmente oculto) -->
+                <div id="formularioPreguntas" style="display: none;">
+                    <form id="formulario" action="procesar_formulario.php" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-secondary" id="cancelarFormulario">Cancelar</button> <!-- Botón para cancelar -->
+                    </form>
+                </div>
             </div>
         </div>
+
+
         
         <!-- Comunidad en Línea -->
         <div class="col-lg-4">
