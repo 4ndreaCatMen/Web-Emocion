@@ -87,15 +87,28 @@ document.addEventListener("DOMContentLoaded", function() {
     var formularioPreguntas = document.getElementById("formularioPreguntas");
     var cancelarFormulario = document.getElementById("cancelarFormulario");
 
-    // Agregar evento de clic al enlace para abrir el formulario
+
+
     abrirFormulario.addEventListener("click", function(event) {
         event.preventDefault(); 
         formularioPreguntas.style.display = "block"; 
     });
 
-    // Agregar evento de clic al botón para cancelar el formulario
     cancelarFormulario.addEventListener("click", function(event) {
         event.preventDefault(); 
         formularioPreguntas.style.display = "none"; 
     });
 });
+
+
+function mostrarPopup() {
+    var popupComunidad = document.getElementById("popupComunidad");
+    popupComunidad.style.display = "block";
+}
+
+
+function cerrarPopup() {
+    var popupComunidad = document.getElementById("popupComunidad");
+    popupComunidad.style.display = "none";
+}
+

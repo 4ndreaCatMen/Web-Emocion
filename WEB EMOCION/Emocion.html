@@ -347,16 +347,30 @@
 
 
         
-        <!-- Comunidad en Línea -->
-        <div class="col-lg-4">
-            <div class="card rounded-circle text-center p-3">
-                <h3 class="h2">Comunidad en Línea</h3>
-                <p>Únete a nuestra comunidad en línea para compartir experiencias, obtener apoyo y conectarte con otros.</p>
-                <!-- Inserta tu plataforma de foro o discusión aquí -->
-                <!-- Puedes agregar cualquier contenido adicional -->
-                <a class="btn btn-secondary" href="#" role="button">Ver más »</a>
-            </div>
-        </div>
+     <!-- Comunidad en Línea -->
+<div class="col-lg-4">
+    <div class="card rounded-circle text-center p-3">
+        <h3 class="h2">Comunidad en Línea</h3>
+        <p>Únete a nuestra comunidad en línea para compartir experiencias, obtener apoyo y conectarte con otros.</p>
+        <a class="btn btn-secondary" href="#" role="button" onclick="mostrarPopup()">Ver más »</a>
+    </div>
+</div>
+
+
+<div id="popupComunidad" class="popup-container" style="display: none;">
+    <div class="popup-content">
+        <h3>Únete a nuestra Comunidad en Línea</h3>
+        <p>Descubre una comunidad acogedora donde puedes compartir experiencias, obtener apoyo emocional y conectarte con otros que comparten tus intereses.</p>
+        <ul>
+            <li>Acceso a recursos exclusivos.</li>
+            <li>Participación en eventos virtuales y actividades.</li>
+            <li>Oportunidades de networking y colaboración.</li>
+        </ul>
+        <p>¡Únete hoy mismo y empieza a disfrutar de todos estos beneficios!</p>
+        <a class="btn btn-secondary" href="#" role="button" onclick="cerrarPopup()">Cerrar</a>
+    </div>
+</div>
+
     </div>
 </div>
 <div id="acerca-de" class="Acerca text-center mt-5 mb-5">
